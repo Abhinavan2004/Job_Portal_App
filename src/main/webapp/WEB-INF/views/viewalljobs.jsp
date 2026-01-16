@@ -44,28 +44,27 @@
     <h2 class="mb-4 text-center font-weight-bold">Job Post List</h2>
 
     <div class="row row-cols-2">
-        <c:forEach var="jobPost" items="${jobPosts}">
+        <c:forEach var="jobPost" items="${jobs}">
 
             <div class="col mb-4">
                 <div class="card border-dark bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title">${jobPost.postProfile}</h5>
+                        <h5 class="card-title">${jobPost.profile}</h5>
                         <p class="card-text">
                             <strong>Description:</strong>
-                                ${jobPost.postDesc}</p>
+                                ${jobPost.description}</p>
                         <p class="card-text">
                             <strong>Experience Required:</strong>
-                                ${jobPost.reqExperience}
+                                ${jobPost.experience}
                             years
                         </p>
-                        <p class="card-text">
-                            <strong>Tech Stack:</strong>
+                        <p class="card-text"><strong>Tech Stack:</strong></p>
                         <ul>
-                            <c:forEach var="tech" items="${jobPost.postTechStack}">
+                            <c:forEach var="tech" items="${jobPost.tech_stack}">
                                 <li>${tech}</li>
                             </c:forEach>
                         </ul>
-                        </p>
+
                     </div>
                     <div class="card-footer">
                         <!-- Optional footer content -->
