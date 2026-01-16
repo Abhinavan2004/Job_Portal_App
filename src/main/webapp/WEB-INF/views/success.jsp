@@ -56,7 +56,7 @@
 
 
 <%
-    com.abhinav.Job_Portal_App.Job_Model.JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
+    JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
 %>
 
 
@@ -66,19 +66,19 @@
         <div class="col-md-6">
             <div class="card border-dark bg-dark text-white">
                 <div class="card-body">
-                    <h5 class="card-title"><%= myJobPost.getPostProfile() %></h5>
+                    <h5 class="card-title"><%= myJobPost.getProfile() %></h5>
                     <p class="card-text">
                         <strong>Description:</strong>
-                        <%= myJobPost.getPostDesc() %>
+                        <%= myJobPost.getDescription() %>
                     </p>
                     <p class="card-text">
                         <strong>Experience Required:</strong>
-                        <%= myJobPost.getReqExperience() %> years
+                        <%= myJobPost.getExperience() %> years
                     </p>
                     <p class="card-text">
                         <strong>Tech Stack:</strong>
                     <ul>
-                        <% for (String tech : myJobPost.getPostTechStack()) { %>
+                        <% for (String tech : myJobPost.getTech_stack()) { %>
                         <li><%= tech %></li>
                         <% } %>
                     </ul>

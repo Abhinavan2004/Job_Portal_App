@@ -50,33 +50,33 @@
 						new Job</h2>
 					<form action="handleForm" method="post">
 						<div class="mb-1">
-							<label for="postId" class="form-label">Post ID</label>
-							<input type="text" class="form-control" id="postId"
-								   name="postId" required>
+							<label for="postid" class="form-label">Post ID</label>
+							<input type="text" class="form-control" id="postid"
+								   name="postid" required>
 						</div>
 
 						<div class="mb-1">
 							<label for="postProfile" class="form-label">Post Profile</label>
-							<input type="text" class="form-control" id="postProfile" name="postProfile" required>
+							<input type="text" class="form-control" id="postProfile" name="profile" required>
 						</div>
 
 
 						<div class="mb-1">
 							<label for="postDesc" class="form-label">Post Description</label>
-							<textarea class="form-control" id="postDesc" name="postDesc" rows="2" required></textarea>
+							<textarea class="form-control" id="postDesc" name="description" rows="2" required></textarea>
 						</div>
 
 
 						<div class="mb-1">
 							<label for="reqExperience" class="form-label">Required
 								Experience</label>
-							<input type="number" class="form-control" id="reqExperience" name="reqExperience" required>
+							<input type="number" class="form-control" id="reqExperience" name="experience" required>
 						</div>
 
 
 						<div class="mb-2">
 							<label for="postTechStack" class="form-label">Tech Stack</label>
-							<select multiple class="form-select" id="postTechStack" name="postTechStack" required>
+							<select multiple class="form-select" id="postTechStack" name="tech_stack" required>
 								<option value="Java">Java</option>
 								<option value="JavaScript">JavaScript</option>
 								<!-- Additional options -->

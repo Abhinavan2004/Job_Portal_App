@@ -5,14 +5,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class JobPost{
-int postid ;
-String profile ;
-String desciption;
-int experience ;
-String []tech_stack ;
+private int postid ;
+private String profile ;
+private String description;
+private int experience ;
+private List<String>tech_stack ;
 }
