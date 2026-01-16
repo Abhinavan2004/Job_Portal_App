@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="com.telusko.JobApp.model.JobPost" %>
+<%@ page import="com.abhinav.Job_Portal_App.model.JobPost" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Job Post Details</title>
-    <!-- Add Bootstrap CSS link -->
 
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container">
-        <a class="navbar-brand fs-1 fw-medium" href="#">Telusko Job Portal Web App</a>
+        <a class="navbar-brand fs-1 fw-medium" href="#">Abhinav Job Portal Web App</a>
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false"
@@ -46,7 +46,7 @@
                     <a class="nav-link" href="viewalljobs">All Jobs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://telusko.com/">Contact</a>
+                    <a class="nav-link" href="https://www.abhinava.online/">Contact</a>
                 </li>
             </ul>
         </div>
@@ -56,7 +56,7 @@
 
 
 <%
-    JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
+    com.abhinav.Job_Portal_App.model.JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
 %>
 
 

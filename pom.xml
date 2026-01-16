@@ -42,12 +42,15 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper</artifactId>
-			<version>10.1.48</version>
-			<scope>compile</scope>
-		</dependency>
+
+
+<!--		-->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.tomcat</groupId>-->
+<!--			<artifactId>tomcat-jasper</artifactId>-->
+<!--			<version>10.1.48</version>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
