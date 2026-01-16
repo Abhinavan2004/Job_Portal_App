@@ -27,7 +27,7 @@ public class JobController {
         System.out.println("Visited add");
         return "addajob";
     }
-    
+
     @GetMapping("/viewalljobs")
     public String viewAllJobs(Model model) {
         List<JobPost> jobs = service.view_all_jobs();
