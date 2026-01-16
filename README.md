@@ -41,7 +41,7 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 </p>
 
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 --------------
 
 ### Backend
@@ -68,10 +68,51 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 *   Embedded Apache Tomcat
     
 
-📂 Project Structure
---------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Job_Portal_App  │  ├── src/main/java/com/abhinav/Job_Portal_App  │   ├── JobController.java  │   │  │   ├── Job_Model  │   │   └── JobPost.java  │   │  │   ├── Job_Service  │   │   └── JobService.java  │   │  │   └── Job_Repository  │       └── Job_Repo.java  │  ├── src/main/webapp/WEB-INF/views  │   ├── home.jsp  │   ├── viewalljobs.jsp  │   ├── addajob.jsp  │   └── success.jsp  │  ├── src/main/resources  │   └── application.properties  │  ├── pom.xml  └── README.md   `
+--------------------
+## 📂 Project Structure
+
+```text
+Job_Portal_App
+│
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── abhinav
+│   │   │           └── Job_Portal_App
+│   │   │               ├── JobController.java
+│   │   │               │
+│   │   │               ├── Job_Model
+│   │   │               │   └── JobPost.java
+│   │   │               │
+│   │   │               ├── Job_Service
+│   │   │               │   └── JobService.java
+│   │   │               │
+│   │   │               └── Job_Repository
+│   │   │                   └── Job_Repo.java
+│   │   │
+│   │   ├── webapp
+│   │   │   └── WEB-INF
+│   │   │       └── views
+│   │   │           ├── home.jsp
+│   │   │           ├── viewalljobs.jsp
+│   │   │           ├── addajob.jsp
+│   │   │           └── success.jsp
+│   │   │
+│   │   └── resources
+│   │       └── application.properties
+│   │
+│   └── test
+│
+├── images
+│   ├── Job_Portal_App_Add_a_Job.png
+│   ├── Job_Portal_App_HomePage.png
+│   └── Job_Portal_App_All_Jobs.png
+│
+├── pom.xml
+└── README.md
+```
 
 ⚙️ How It Works (MVC Flow)
 --------------------------
@@ -101,63 +142,49 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 ### Prerequisites
 
 *   Java 17 or higher
-    
 *   Maven
-    
 *   IntelliJ IDEA / Eclipse
     
 
 ### Run the Project
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/Abhinavan2004/Job_Portal_App.git  cd Job_Portal_App  mvn clean install  mvn spring-boot:run   `
-
+```
+ git clone https://github.com/Abhinavan2004/Job_Portal_App.git
+```
+```
+ cd Job_Portal_App  mvn clean install
+```
+```
+ mvn spring-boot:run   `
+```
 ### Access the App
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   http://localhost:8080/   `
-
+```
+ http://localhost:8088/   `
+```
 🔗 Application Routes
 ---------------------
 
-URLDescription/ or /homeHome page/viewalljobsView all job listings/addjobAdd a new job/handleFormForm submission endpoint
+| URL | Description |
+|-----|------------|
+| `/` or `/home` | Home page |
+| `/viewalljobs` | View all job listings |
+| `/addjob` | Add a new job |
+| `/handleForm` | Form submission endpoint |
 
-🧪 Sample Job Data
-------------------
-
-Jobs are stored using an in-memory List:
-
-*   Java Developer
     
-*   Frontend Developer
-    
-*   Backend Developer
-    
-*   Android Developer
-    
-*   DevOps Engineer
-    
-
 📌 Future Enhancements
 ----------------------
 
 *   🗄️ Database integration (MySQL / PostgreSQL)
-    
 *   🔍 Search & filter jobs
-    
-*   🧾 Pagination
-    
 *   🔐 Authentication & authorization
-    
 *   🧪 Unit & integration tests
-    
 *   🌐 REST API support
-    
 *   🧑‍💻 Admin dashboard
     
-
 👨‍💻 Author
 ------------
 
-**Abhinav**
+**Abhinav Anpan**
 
 *   GitHub: [@Abhinavan2004](https://github.com/Abhinavan2004)
     
