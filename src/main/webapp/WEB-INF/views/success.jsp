@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@ page import="com.telusko.JobApp.model.JobPost" %>
+<%@ page import="com.abhinav.Job_Portal_App.Job_Model.JobPost" %>
 <%@ page import="com.abhinav.Job_Portal_App.Job_Model.JobPost" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container">
-        <a class="navbar-brand fs-1 fw-medium" href="#">Abhinav Job Portal Web App</a>
+        <a class="navbar-brand fs-1 fw-medium" href="https://www.abhinava.online">Abhinav Job Portal Web App</a>
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false"
