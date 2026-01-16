@@ -26,13 +26,20 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 
 
 ### Home Page
-![Home Page](./images/Job_Portal_Home_Page.png)
+<p align="left">
+  <img src="./images/Job_Portal_App_HomePage.png" width="600" height="500">
+</p>
 
 ### View All Jobs
-![View All Jobs](./images/Job_Portal_App_All_Jobs.png)
+<p align="left">
+  <img src="./images/Job_Portal_App_All_Jobs.png" width="600" height="500">
+</p>
 
 ### Add a Job
-![Add a Job](./images/Job_Portal_App_Add_a_Job.png)
+<p align="left">
+  <img src="./images/Job_Portal_App_Add_a_Job.png" width="600" height="500">
+</p>
+
 
 🛠️ Tech Stack
 --------------
@@ -40,31 +47,21 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 ### Backend
 
 *   Java 17+
-    
 *   Spring Boot (MVC)
-    
 *   Spring Core (DI)
-    
 *   Lombok
     
-
 ### Frontend
 
 *   JSP
-    
 *   JSTL
-    
 *   HTML5
-    
 *   CSS3
-    
 *   Bootstrap 5
-    
 
 ### Build Tool
 
 *   Maven
-    
 
 ### Server
 
