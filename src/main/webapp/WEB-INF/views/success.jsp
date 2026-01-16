@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="com.telusko.JobApp.model.JobPost" %>
-<%@ page import="com.abhinav.Job_Portal_App.model.JobPost" %>
+<%@ page import="com.abhinav.Job_Portal_App.Job_Model.JobPost" %>
 <%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +56,7 @@
 
 
 <%
-    com.abhinav.Job_Portal_App.model.JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
+    com.abhinav.Job_Portal_App.Job_Model.JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
 %>
 
 

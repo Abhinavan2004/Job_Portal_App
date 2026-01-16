@@ -1,4 +1,4 @@
-package com.abhinav.Job_Portal_App.model;
+package com.abhinav.Job_Portal_App.Job_Model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
