@@ -14,10 +14,19 @@ public class JobService {
     private Job_Repo repo ;
 
     public List<JobPost> view_all_jobs(){
-        return repo.all_jobs();
+        return repo.findAll();
     }
 
     public void add_job(JobPost post){
-        repo.add_a_job(post);
+        repo.save(post);
     }
+    public JobPost view_job(int id){
+        return repo.findById(id).orElse(null);
+    }
+
+    public void delete_job(int id){
+        repo.deleteById(id);
+    }
+
+
 }
