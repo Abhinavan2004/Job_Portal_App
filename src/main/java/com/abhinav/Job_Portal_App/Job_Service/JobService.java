@@ -72,6 +72,7 @@ public class JobService {
                         Arrays.asList("AWS", "Docker", "Kubernetes", "Jenkins")
                 )
         ));
+        repo.saveAll(jobs);
     }
 
 }
