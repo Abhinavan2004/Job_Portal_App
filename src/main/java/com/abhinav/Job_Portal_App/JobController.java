@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -43,4 +44,24 @@ public class JobController {
         return "success" ;
     }
 
+    @GetMapping("/deletejob")
+    public String deleteJob(@RequestParam int id) {
+        service.delete_job(id);
+        return "redirect:/viewalljobs";
+    }
+
+    @GetMapping("/updatejob")
+    public String updateJob(@RequestParam int id, Model model) {
+        JobPost job = service.view_job(id);
+        model.addAttribute("jobPost", job);
+        return "updatejob";
+    }
+
+    @PostMapping("/updatejob")
+    public String handleUpdate(JobPost post) {
+        service.add_job(post); // save = update
+        return "redirect:/viewalljobs";
+    }
 }
+
+
