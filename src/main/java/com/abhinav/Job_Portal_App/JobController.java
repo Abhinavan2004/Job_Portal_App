@@ -62,6 +62,13 @@ public class JobController {
         service.add_job(post); // save = update
         return "redirect:/viewalljobs";
     }
+
+    @GetMapping("/load")
+    public String loading(){
+        service.load();
+        System.out.println("Loaded");
+        return "redirect:/viewalljobs";
+    }
 }
 
 
