@@ -1,7 +1,7 @@
 🧑‍💼 Job Portal Web Application
 ================================
 
-A **Spring Boot MVC based Job Portal Web Application** that allows users to **view job listings, add new jobs, and manage job data** using a clean layered architecture.The project uses **JSP, JSTL, Spring MVC, and Bootstrap** for a simple yet effective UI.
+A **Spring Boot MVC based Job Portal Web Application** that allows users to **view job listings, add new jobs, and manage job data** using a clean layered architecture.The project uses **JSP, JSTL, Spring MVC, Bootstrap and MySQL** for a simple yet effective UI.
 
 📌 Features
 -----------
@@ -11,12 +11,16 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 *   📋 View all job postings
     
 *   ➕ Add new job listings
+  
+*   ➖ Delete job listings
+
+*   📃 Update job listings
     
 *   🧱 Layered architecture (Controller → Service → Repository)
     
 *   🎨 Responsive UI using Bootstrap
     
-*   🧪 Dummy in-memory job data (no database yet)
+*   🧪 MySQL database for storage
     
 *   📄 JSP + JSTL for dynamic server-side rendering
     
@@ -50,7 +54,11 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 *   Spring Boot (MVC)
 *   Spring Core (DI)
 *   Lombok
-    
+
+### Database
+
+*   MySQL
+  
 ### Frontend
 
 *   JSP
@@ -67,7 +75,6 @@ A **Spring Boot MVC based Job Portal Web Application** that allows users to **vi
 
 *   Embedded Apache Tomcat
     
-
 
 --------------------
 ## 📂 Project Structure
@@ -99,6 +106,7 @@ Job_Portal_App
 │   │   │           ├── viewalljobs.jsp
 │   │   │           ├── addajob.jsp
 │   │   │           └── success.jsp
+|   |   |           └── updatejob.jsp
 │   │   │
 │   │   └── resources
 │   │       └── application.properties
@@ -129,7 +137,7 @@ Job_Portal_App
         
 3.  **Repository**
     
-    *   Stores and manages job data (in-memory list)
+    *   Stores and manages job data (in database)
         
 4.  **JSP View**
     
@@ -174,7 +182,6 @@ Job_Portal_App
 📌 Future Enhancements
 ----------------------
 
-*   🗄️ Database integration (MySQL / PostgreSQL)
 *   🔍 Search & filter jobs
 *   🔐 Authentication & authorization
 *   🧪 Unit & integration tests
