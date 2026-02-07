@@ -24,7 +24,7 @@ public class JobController {
     }
 
     @GetMapping("/addjob")
-    public String add_Job(){
+    public String add_Job() {
         System.out.println("Visited add");
         return "addajob";
     }
