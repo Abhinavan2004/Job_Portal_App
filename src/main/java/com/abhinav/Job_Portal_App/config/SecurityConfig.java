@@ -1,6 +1,6 @@
 package com.abhinav.Job_Portal_App.config;
 
-import com.abhinav.Secutity_prac.service.MyUserDetails;
+import com.abhinav.Job_Portal_App.Job_Service.MyUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
